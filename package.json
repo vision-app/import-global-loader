@@ -1,7 +1,7 @@
 {
   "name": "import-global-loader",
   "description": "Webpack loader for import global css files.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Rainfore <rainforest92@126.com>",
   "main": "./index.js",
   "repository": "vision-app/import-global-loader",
