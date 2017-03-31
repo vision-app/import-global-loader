@@ -1,16 +1,16 @@
 {
   "name": "import-global-loader",
   "description": "Webpack loader for import global css files.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Rainfore <rainforest92@126.com>",
   "main": "./index.js",
-  "repository": "vision-app/import-global-loader",
+  "repository": "vusion/import-global-loader",
   "bugs": {
-      "url": "http://github.com/vision-app/import-global-loader/issues"
+      "url": "http://github.com/vusion/import-global-loader/issues"
   },
   "license": "MIT",
   "keywords": [
-      "vision",
+      "vusion",
       "import",
       "global",
       "css",
@@ -18,7 +18,7 @@
       "loader"
   ],
   "tags": [
-      "vision",
+      "vusion",
       "import",
       "global",
       "css",
