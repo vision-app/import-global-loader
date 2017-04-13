@@ -1,7 +1,7 @@
 {
   "name": "import-global-loader",
   "description": "Webpack loader for import global css files.",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "author": "Rainfore <rainforest92@126.com>",
   "main": "./index.js",
   "repository": "vusion/import-global-loader",
