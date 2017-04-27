@@ -1,12 +1,14 @@
-const fs = require('fs')
-const path = require('path')
+const fs = require('fs');
+const path = require('path');
 
 module.exports = function (content) {
     this.cacheable();
     const globalPath = path.join(process.cwd(), 'global.css');
-    const relativePath = path.relative(path.dirname(this.resourcePath), globalPath);
+    let relativePath = path.relative(path.dirname(this.resourcePath), globalPath);
+    if (!relativePath.includes('/'))
+        relativePath = './' + relativePath;
     this.addDependency(globalPath);
     if (fs.existsSync(globalPath))
         content = `@import '${relativePath}';\n` + content;
     return content;
-}
+};
