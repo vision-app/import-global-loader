@@ -3,7 +3,9 @@ const path = require('path');
 
 module.exports = function (content) {
     this.cacheable();
-    const globalPath = path.join(process.cwd(), 'global.css');
+    //兼容vusion打包单个组件时引入指定路径的global.css
+    const configPath = global.vusionConfig && global.vusionConfig.globalCssPath
+    const globalPath = configPath ? configPath : path.join(process.cwd(), 'global.css');
     let relativePath = path.relative(path.dirname(this.resourcePath), globalPath);
     if (!relativePath.includes('/'))
         relativePath = './' + relativePath;
